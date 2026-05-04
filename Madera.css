@@ -681,12 +681,6 @@ body:has(#Light:checked) {
     }
 }
 @media (max-width: 804px) {
-    .Mial {
-        font-size: 0.5em;
-    }
-    .gramofon {
-        font-size: 0.5em;
-    }
     .Prawy {
         display: none;
     }
