@@ -1,0 +1,991 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#wiencej {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Gap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Gqp {
+    font-size: 60px;
+    color: white;
+}
+.menu1 {
+    height: 9%;
+    width: 100%;
+    background-color: var(--menu1);
+}
+.Header {
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+}
+.Header2 {
+    width: 100%;
+    display: inline-block;
+}
+.span {
+    font-size: 30px;
+}
+.menu2 {
+    height: 7%;
+    background-color: var(--menu2);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nagłówek {
+    font-size: 3em;
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+
+.celownik {
+    display: flex;
+    gap: 20px;
+}
+.Dark::before {
+        font-family: 'Material Symbols Outlined';
+        content: "light_mode";
+        color: white;
+        background-color: rgb(174, 174, 54);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 12px;
+    }
+    #Light:checked + .Dark::before {
+        content: "dark_mode";
+        font-family: 'Material Symbols Outlined';
+        color: white;
+    }
+    #Light {
+        display: none;
+    }
+    .Dark {
+        cursor: pointer;
+        display: flex;
+        align-self: right;
+    }
+    :root {
+    --menu1: rgb(108, 156, 37);
+    --menu2: rgb(84, 119, 35);
+    --Miron: rgb(128, 128, 128);
+    --stopka:   rgb(96, 93, 93);
+}
+body:has(#Light:checked) {
+    --menu1: rgb(68, 110, 25);
+    --menu2: rgb(48, 80, 22);
+    --Miron: rgb(95, 95, 95);
+    --stopka: rgb(60, 58, 58);
+}
+
+
+
+
+
+
+
+
+.tel {
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.cel {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    display: flex;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    justify-content: flex-end;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+.Voldemort {
+    display: none;
+}
+.Dumble {
+    display: flex;
+}
+
+
+
+.menu {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+.menu > li {
+    width: 10em;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    position: relative;
+}
+.menu > li > a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Odnos {
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 15px;
+    height: 100%;
+    text-decoration: none;
+}
+.menu > li:hover {
+    background-color: rgb(230, 157, 32);
+    border-radius: 5px;
+}
+.menu > li:hover > a {
+    color: white;
+}
+.menu li:hover #m1{
+    height: 80px;
+    transition: 0.5s;
+}
+.menu li:hover #m2{
+    height: 120px;
+    transition: 0.5s;
+}
+.menu li:hover #m3{
+    height: 40px;
+    transition: 0.5s;
+}
+.submenu{
+    overflow: hidden;
+    display: block;
+    height: 0px;
+    width: fit-content;
+    position:absolute;
+    background: rgb(183, 126, 27);
+    text-align:  center;
+    top: 100%;
+    left: auto;
+    width: 100%;
+    border-radius: 5px;
+    transition: 1s;
+}
+.submenu > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Iosevka Charon", monospace;
+    transition: 1s;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+}
+.submenu > li:hover {
+    background-color: rgb(119, 81, 16);
+}
+.submenu > li > a{
+    display: flex;
+    align-self: center;
+}
+
+
+
+
+
+.Tlo {
+    height: 84%;
+}
+.BODY {
+    background-image:url(Image/Anyz.png);
+    width: 100%;
+    height: 956px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.nagłówek2 {
+    color: rgb(0, 0, 0);
+    font-family: "Iosevka Charon", monospace;
+    font-size: 3.125em;
+    text-align: center;
+}
+.hr {
+    width:10%;
+    background-color: gold;
+}
+.button {
+    width: 6%;
+    height: 2%;
+    padding: 1.25rem;
+    color: white;
+    background-color: rgb(174, 174, 54);
+    border: 0px;
+    margin-top: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-family: "Iosevka Charon", monospace;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.button:hover {
+    background-color: rgb(230, 157, 32);
+    width: 7%;
+    height: 3%;
+    box-shadow: 5px 5px 5px 5px rgb(42, 40, 40);
+}
+.button:focus {
+    background-color: rgb(107, 64, 37);
+}
+#Miron {
+    width: 100%;
+    height:100%;
+    background-color: var(--Miron);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.zdj {
+    width: 100%;
+    margin-top: 3rem;
+}
+.podpis {
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    font-size: 3.125em;
+    width: fit-content;
+}
+.Lewy {
+    width:fit-content;
+    height:fit-content;
+    margin-top: 11rem;
+}
+.Prawy {
+    width: 40%;
+    margin-top: 10rem;
+    height: fit-content;
+    margin-left: 2.5rem;
+}
+.Calo {
+    width: 56.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+    height: fit-content;
+}
+.Loga {
+    width: 3vw;
+}
+.Loggo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+.pdroz {
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    font-size: 1.3em;
+    text-align: justify;
+    width: 96%;
+    margin-top: 4%;
+    display: flex;
+    margin-left: 2%;
+}
+.Har {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 6%;
+}
+.Har2 {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+}
+#Har1 {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+    scroll-margin-top: 158px;
+}
+#Har2 {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+    scroll-margin-top: 158px;
+}
+#Har3 {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+    scroll-margin-top: 158px;
+}
+#Har4 {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+    scroll-margin-top: 158px;
+}
+#Har5 {
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+    scroll-margin-top: 158px;
+}
+
+
+
+
+.przewodnik {
+    height: 100%;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+.Video {
+    margin-top: 4em;
+    display: flex;
+    align-self: center;
+    width: 25%;
+}
+.najciek {
+    margin-top: 7.5%;
+    font-family: "Iosevka Charon", monospace;
+    color:white;
+    font-size: 3.125em;
+    display: inline-block;
+    text-align: left;
+}
+.F1 {
+    width: 46.3678%;
+    display: block;
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(47, 46, 46);
+}
+.Madera {
+    width: 85%;
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(47, 46, 46);
+    margin-top: 15%;
+}
+.Galeria {
+    margin-top: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5%;
+    width:100%;
+    height: fit-content;
+}
+.Galerion {
+    margin-top: 7.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width:100%;
+    height: fit-content;
+}
+.Galerius {
+    margin-top: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5%;
+    width:100%;
+    height: fit-content;
+}
+
+.Baton {
+    width: 6%;
+    height: 2%;
+    padding: 1.25rem;
+    color: white;
+    background-color: rgb(174, 174, 54);
+    border: 0px;
+    margin-top: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    transition: 0.5s;
+    font-family: "Iosevka Charon", monospace;
+    text-decoration: none;
+    margin-right: 6%;
+    margin-bottom: 2%;
+}
+.Baton:hover {
+    background-color: rgb(230, 157, 32);
+    width: 7%;
+    height: 3%;
+    box-shadow: 5px 5px 5px 5px rgb(42, 40, 40);
+}
+.Baton:focus {
+    background-color: rgb(107, 64, 37);
+}
+
+.informa {
+    font-size: 1.3em;
+    color: white;
+    font-family: "Iosevka Charon", monospace;
+    text-align: justify;
+}
+
+
+
+.stopka {
+    width: 100%;
+    height: 11vh;
+    background-color: var(--stopka);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+}
+.gramofon {
+    font-size: 1.5em;
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+}
+.Mial {
+    font-size: 1.5em;
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    display: inline-block;
+}
+.Iconic {
+    height: 6vh;
+}
+.Sajmon {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.Powrot {
+    padding: 15px;
+    display: flex;
+    background-color: rgb(174, 174, 54);
+    border: 0px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+    font-family: "Iosevka Charon", monospace;
+    font-size: 30px;
+    align-items: center;
+    width: fit-content;
+}
+.Powrot:hover {
+    background-color: rgb(230, 157, 32);
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.Powrot:focus {
+    background-color: rgb(107, 64, 37);
+}
+
+
+
+
+
+     /* POCZATEK */
+
+.Karuzela {
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    margin-top: 5%;
+    margin-bottom: 9%;
+    z-index: 0.5;
+}
+.Image {
+    width:240px;
+    height: 120px;
+    border: 1px solid black;
+}
+#perspektywa {
+    width: 240px;
+    height: 120px;
+    margin: 0 auto;
+    perspective: 2400px;
+}
+#rodzic {
+    transform:rotateX(-7deg);
+    -webkit-transform: rotateX(-7deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    animation: obrot 10s linear infinite;
+    -webkit-animation: obrot 10s linear infinite;
+}
+#rodzic:hover {
+    animation: obrot 8s linear;
+    -webkit-animation: obrot 8s linear;
+}
+#rodzic > div {
+    position: absolute;
+    width: 238px;
+    height: 118px;
+}
+#rodzic > div:nth-child(1) {
+    transform: rotateY(0) translateZ(328px);
+    -webkit-transform: rotateY(0) translateZ(328px);
+}
+#rodzic > div:nth-child(2) {
+    transform: rotateY(40deg) translateZ(328px);
+    -webkit-transform: rotateY(40deg) translateZ(328px);
+}
+#rodzic > div:nth-child(3) {
+    transform: rotateY(80deg) translateZ(328px);
+    -webkit-transform: rotateY(80deg) translateZ(328px);
+}
+#rodzic > div:nth-child(4) {
+    transform: rotateY(120deg) translateZ(328px);
+    -webkit-transform: rotateY(120deg) translateZ(328px);
+}
+#rodzic > div:nth-child(5) {
+    transform: rotateY(160deg) translateZ(328px);
+    -webkit-transform: rotateY(160deg) translateZ(328px);
+}
+#rodzic > div:nth-child(6) {
+    transform: rotateY(200deg) translateZ(328px);
+    -webkit-transform: rotateY(200deg) translateZ(328px);
+}
+#rodzic > div:nth-child(7) {
+    transform: rotateY(240deg) translateZ(328px);
+    -webkit-transform: rotateY(240deg) translateZ(328px);
+}
+#rodzic > div:nth-child(8) {
+    transform: rotateY(280deg) translateZ(328px);
+    -webkit-transform: rotateY(280deg) translateZ(328px);
+}
+#rodzic > div:nth-child(9) {
+    transform: rotateY(320deg) translateZ(328px);
+    -webkit-transform: rotateY(320deg) translateZ(328px);
+}
+
+     /* KONIEC */
+
+
+
+
+@keyframes obrot {
+    0% { transform: rotateX(-7deg) rotateY(0); }
+    100% { transform: rotateX(-7deg) rotateY(360deg) }
+}
+@-webkit-keyframes obrot {
+    0% { -webkit-transform: rotateX(-7deg) rotateY(0); }
+    100% { -webkit-transform: rotateX(-7deg) rotateY(360deg) }
+}
+@media (max-width: 1629px) {
+    .F1 {
+        height: 30%;
+    }
+}
+@media (max-width: 1593px) {
+    .F1 {
+        margin-left: 26.8161%;
+        margin-right: 26.8161%;
+    }
+    .Galeria {
+        display: flex;
+        flex-direction: column;
+    }
+    .Galerion {
+        display: flex;
+        flex-direction: column;
+    }
+    .Galerius {
+        display: flex;
+        flex-direction: column;
+    }
+    .informa {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1571px) {
+    .Mial {
+        font-size: 1.4em;
+    }
+    .gramofon {
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 1439px) {
+    .Mial {
+        font-size: 1em;
+    }
+    .gramofon {
+        font-size: 1em;
+    }
+}
+@media (max-width: 1217px) {
+}
+@media (max-width: 1075px) {
+    .Mial {
+        font-size: 0.7em;
+    }
+    .gramofon {
+        font-size: 0.7em;
+    }
+    .Prawy {
+        margin-left: 3%;
+    }
+    .podpis {
+        font-size: 2em;
+    }
+}
+@media (max-width: 804px) {
+    .Video {
+        width: 50%;
+        margin-bottom: 4em;
+    }
+    .Mial {
+        font-size: 0.5em;
+    }
+    .gramofon {
+        font-size: 0.5em;
+    }
+    .Prawy {
+        display: none;
+    }
+    .Loga {
+        width: 35px;
+    }
+    .Karuzela {
+        margin-top: 50px;
+    }
+    #Har1 {
+        margin-top: 0;
+    }
+    #perspektywa {
+        width:120px;
+        height:60px;
+        margin:0 auto;
+        perspective:1200px;
+        -webkit-perspective:1200px;
+      }
+
+      #rodzic {
+        transform:rotateX(-7deg);
+        -webkit-transform:rotateX(-7deg);
+        transform-style:preserve-3d;
+        -webkit-transform-style:preserve-3d;
+        animation:obrot 8s linear infinite;
+        -webkit-animation:obrot 8s linear infinite;
+      }
+      .Image {
+        width: 118px;
+        height: 58px;
+      }
+      #rodzic > div {
+        width:118px;
+        height:58px;
+      }
+
+
+      #rodzic > div:nth-child(1) {
+        transform:rotateY(0) translateZ(164px);
+        -webkit-transform:rotateY(0) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(2) {
+        transform:rotateY(40deg) translateZ(164px);
+        -webkit-transform:rotateY(40deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(3) {
+        transform:rotateY(80deg) translateZ(164px);
+        -webkit-transform:rotateY(80deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(4) {
+        transform:rotateY(120deg) translateZ(164px);
+        -webkit-transform:rotateY(120deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(5) {
+        transform:rotateY(160deg) translateZ(164px);
+        -webkit-transform:rotateY(160deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(6) {
+        transform:rotateY(200deg) translateZ(164px);
+        -webkit-transform:rotateY(200deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(7) {
+        transform:rotateY(240deg) translateZ(164px);
+        -webkit-transform:rotateY(240deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(8) {
+        transform:rotateY(280deg) translateZ(164px);
+        -webkit-transform:rotateY(280deg) translateZ(164px);
+      }
+
+      #rodzic > div:nth-child(9) {
+        transform:rotateY(320deg) translateZ(164px);
+        -webkit-transform:rotateY(320deg) translateZ(164px);
+      }
+
+      @keyframes obrot
+      {
+        0% { transform:rotateX(-7deg) rotateY(0); }
+        100% { transform:rotateX(-7deg) rotateY(360deg); }
+      }
+
+      @-webkit-keyframes obrot
+      {
+        0% { -webkit-transform:rotateX(-7deg) rotateY(0); }
+        100% { -webkit-transform:rotateX(-7deg) rotateY(360deg); }
+      }
+}
+@media (max-width: 951px) {
+    .najciek {
+        font-size: 2em;
+    }
+}
+@media (max-width: 855px) {
+    .Prawy {
+        width: 190px;
+    }
+}
+@media (max-width: 679px) {
+    .Prawy {
+        width: 190px;
+    }
+}
+@media (max-width: 607px) {
+    .najciek {
+        font-size: 1.5em;
+    }
+    .nagłówek2 {
+        font-size: 2em;
+    }
+    .Lewy {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .F1 {
+        width: 100%;
+        height: auto;
+}
+}
+@media (max-width: 585px) {
+    .Image {
+        width: 120px;
+        height: 60px;
+    }
+}
+@media (max-width: 1070px) {
+    .Voldemort {
+        display: flex;
+    }
+    .Dumble {
+        display: none;
+    }
+    .Meni > li {
+    height: 2em;
+    padding: 10px;
+    display: flex;
+    width: 9em;
+    justify-content: center;
+    }
+    .Meni > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: "Iosevka Charon", monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .Meni > li:hover {
+        background-color: rgb(230, 157, 32);
+        border-radius: 5px;
+    }
+    /*Ukrycie Checkboxa*/
+    #hamburger {
+        display: none;
+    }
+    /*Ikony Hamburgera*/
+    .burger {
+        width: 30px;
+        cursor: pointer;
+        display: flex;
+        gap: 2px;
+    }
+    /*Ukrywanie na początku*/
+    .Meni {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background: rgb(59, 82, 27);
+        width: fit-content;
+        height: fit-content;
+        transform: translateX(-100%); /*ukrycie poza ekranem*/
+        transition: 0.3s ease; /*powrót na ekran w dół płynnym ruchem*/
+        list-style-type: none;
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+        gap: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .Podmenu {
+        overflow: hidden;
+        position:absolute;
+        background: rgb(183, 126, 27);
+        text-align:  center;
+        top: 100%;
+        left: auto;
+        border-radius: 5px;
+        transition: 1s;
+        height: 0px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .Podmenu > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: white;
+        font-family: "Iosevka Charon", monospace;
+        transition: 1s;
+        padding: 5px;
+        height: 30px;
+        width: 100%;
+    }
+    .Podmenu > li:hover {
+        background-color: rgb(119, 81, 16);
+    }
+    .Blink {
+        font-size: 1.2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Meni li:hover #o1{
+        height: 80px;
+        transition: 0.5s;
+    }
+    .Meni li:hover #o2{
+        height: 120px;
+        transition: 0.5s;
+    }
+    #hamburger:checked ~ .Meni {
+        transform: translateX(0);
+    }
+    
+    
+    /*animacja hamburgera*/
+    .burger::before {
+        font-family: 'Material Symbols Outlined';
+        content: "menu";
+        color: white;
+        font-size: 40px;
+    }
+    /* Zmiana na close */
+    #hamburger:checked + .burger::before {
+        content: "close";
+        color: white;
+    }
+}
+@media (max-width: 990px) {
+    .Calo {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .przewodnik {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .F1 {
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-self: center;
+    }
+    .informa {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .Galeria {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .Galerion {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .Galerius {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+}

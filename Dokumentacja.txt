@@ -1,0 +1,16 @@
+1. Stworzy³em stronê internetow¹ ¿ycie w podró¿y, która mo¿e byæ inspiracj¹ i pomoc¹ dla osób poszukuj¹cych ciekawych kierunków do podró¿owania. Na stronie mo¿na siê zapoznaæ z ciekawostkami na temat konkretnych krajów. Mo¿na te¿ przes³aæ formularz zapytaniowy w celu zlecenia i zorganizowania adekwatnego wyjazdu.
+2. Menu strony g³ównej podzielone zosta³o na kontynenty i kolejno kraje, co umo¿liwia ³atwiejszy wybór miejsca docelowego. Mo¿na równie¿ dokonaæ wyboru poprzez galeri¹ zdjêæ poszczególnych krajów. Poniewa¿ jest to strona typu one-page. Odpowiednio zosta³y umieszczone przyciski, u³atwiaj¹ce nawigacjê na stronie internetowej. W celu dobrej wizualizacji do ka¿dego podpunktu na stronie umieszczono galeriê zdjêæ. Na jednej z podstron o tytule Cypr. Dodatkowo umieszczono galeriê zdjêæ w formie karuzeli, aby ciekawiej zobrazowaæ temat. Wiêkszoœæ podstron posiada krótki filmiki o tematyce danego kraju, aby lepiej zaprezentowaæ dany kraj. Celem stworzenia dobrego klimatu strony ka¿da podstrona wprowadza regiolan¹ muzyk¹.
+3. G³ówne narzêdzia u¿yte w tworzeniu strony: 
+webkod.pl  - zrozumienie jak stworzyæ karuzele w HTML i CSS
+Capcut - znalezienie flimików umieszczonych na podstronach
+Google - znalezienie zdjêæ umieszczonych na stronie internetowej
+GIMP - kadrowanie zdjêæ i zmiana ich rozdzielczoœci
+Spotify - pobranie œcie¿ki dŸwiêkowej
+
+4. Przyk³adowe b³êdy:
+
+a) atrybut background-attachmend: scroll sprawia ¿e t³o pozycjonowa³o siê wzglêdem jedynie ca³ej strony. Rozwi¹zanie zwiêkszenie wysokoœci zdjêcia, aby górna czêœæ wypycha³a t³o na dó³.
+b)  podczas tworznie galerii w formie karuzeli wyst¹pi³y progblemy zwi¹zane z responsywnoœci¹, poniewa¿ zmiejszenie rozmiarów nie zmieni³o miar k¹tów miêdzy nimi, przez co ca³a karuzela "rozjecha³a siê". Rozwi¹zanie matematyczne wyliczenie parametrów do pomniejszonej galerii.
+c) Podczas tworzenia menu na stronie g³ównej pojawi³y siê liczne problemy z automatycznymi marginesami i paddingami, które pojawiaj¹ siê  automatycznie z elementem <ul>. Rozwi¹zaniem by³o ustawienie marginesów i paddingów na 0 w ka¿dej liœcie.
+
+ród³em inspiracji s¹ podró¿e osobiste, oraz filmiki podró¿nicze znalezione w CapCut.

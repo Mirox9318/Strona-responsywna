@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <h1 class="Nagłówek">Wypełnij formularz</h1>
+
+<section class="row">
+
+<div class="beta">
+<a class="Powrot" href="OnePage.html">
+<span class="material-symbols-outlined" class="opcja">home</span>
+</a>
+</div>
+
+
+    <form action="#">
+        <fieldset class="fieldset">
+        <h4 class="Polecenia" id="k1">Podaj Imię:</h4><input type="text" class="Onput" required maxlength="50" minlength="2"><br>
+        <h4 class="Polecenia" id="k2">Podaj Nazwisko:</h4><input type="text" class="Onput" required maxlength="50"  minlength="2"><br>
+        <h4 class="Polecenia" id="k3">Podaj Adres E-mail:</h4><input type="email" class="Onput" required maxlength="50" minlength="6"><br>
+        <h4 class="Polecenia" id="k4">Podaj Numer Telefonu:</h4><input type="tel" class="Onput" maxlength="9" pattern="[0-9]*" required  maxlength="9"  minlength="9"><br>
+        <h4 class="Polecenia" id="k6">Podaj Wiek:</h4><input type="number" class="Onput"required maxlength="3" max="120"><br>
+        <h4 class="Polecenia" id="k7">Podaj z jakiego jesteś kraju:</h4><input type="text" class="Onput" required minlength="2" maxlength="50"><br>
+
+
+
+
+        <h4 class="Polecenian">Jaki jest wymiar wyjazdu?</h4>
+
+
+
+
+        <input type="checkbox" class="part2" name="1">Wypoczynkowy<br>
+        <input type="checkbox" class="part2"name="1" >Biznesowy<br>
+        <input type="checkbox" class="part2" name="1">Aktywny<br>
+        <input type="checkbox" class="part2" name="1">Turystyczny<br>
+        <input type="checkbox" class="part2" name="1">Inny (napisz w informacjach dodatkowych)
+            <br><br>
+        <h4 class="Polecenia" id="k8" required>Podaj budżet wyjazdu:</h4>
+        <input type="number" class="Onput" required>
+
+        <br>
+            <h4 class="select">W jakim miesiącu ma się odbyć wyjazd:</h4>
+        <select  required>
+            <option>Styczeń</option>
+            <option>Luty</option>
+            <option>Marzec</option>
+            <option>Kwiecień</option>
+            <option>Maj</option>
+            <option>Czerwiec</option>
+            <option>Lipec</option>
+            <option>Sierpień</option>
+            <option>Wrzesień</option>
+            <option>Październik</option>
+            <option>Listopad</option>
+            <option>Grudzień</option>
+        </select>
+
+    <h4 class="Osobny">Dla ilu osób przeznaczony jest wyjazd?</h4>
+        <input type="radio" class="part2" name="a1">1-2<br>
+        <input type="radio" class="part2"name="a1">3-4<br>
+        <input type="radio" class="part2" name="a1">4-6<br>
+        <input type="radio" class="part2" name="a1">7-8<br>
+        <input type="radio" class="part2" name="a1">8-10<br>
+
+        <br>
+            <input type="checkbox" name="1"><h4 class="All">Całe wakacje mają być all-inclusive</h4><br>
+
+
+    <h4 style="margin-top: 20px; float: justify; width: 500px; margin-bottom: 5px;">Dodatkowe informacje:</h4>
+    <textarea></textarea><br>
+    <input id="n4" type="submit" value="Wyślij zgłoszenie" style="margin-top: 30px;" title="Naciśnięcie spowoduje zarejestrowanie użytkownika">
+    </fieldset>
+    </form>
+
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.Header {
+    width: 100%;
+    position: fixed;
+}
+#wiencej {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.menu1 {
+    height: 9%;
+    width: 100%;
+    background-color: var(--menu1);
+}
+.menu2 {
+    position: relative;
+    height: 7%;
+    background-color: var(--menu2);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nagłówek {
+    font-size: 3em;
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+.tel {
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.cel {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    display: flex;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    justify-content: flex-end;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+.Voldemort {
+    display: none;
+}
+.Dumble {
+    display: flex;
+}
+    
+
+.menu {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+.menu > li {
+    width: 6rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    position: relative;
+}
+.menu > li > a {
+    display: flex;
+    align-items: center;
+}
+.Odnos {
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 15px;
+    height: 100%;
+    text-decoration: none;
+}
+.menu > li:hover {
+    background-color: rgb(230, 157, 32);
+    border-radius: 5px;
+}
+.menu > li:hover > a {
+    color: white;
+}
+.menu  li:hover > #m1{
+    height: 120px;
+    transition: 0.5s;
+}
+.menu  li:hover > #m2{
+    height: 240px;
+    transition: 0.5s;
+}
+.menu  li:hover > #m3{
+    height: 40px;
+    transition: 0.5s;
+}
+.submenu{
+    overflow: hidden;
+    display: block;
+    height: 0px;
+    position:absolute;
+    background: rgb(183, 126, 27);
+    text-align:  center;
+    top: 100%;
+    left: auto;
+    border-radius: 5px;
+    transition: 1s;
+}
+.submenu > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Iosevka Charon", monospace;
+    width: 6rem;
+    text-align: center;
+    transition: 1s;
+    padding: 5px;
+    height: 30px;
+}
+.submenu > li:hover {
+    background-color: rgb(119, 81, 16);
+}
+.submenu > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .Dark::before {
+        font-family: 'Material Symbols Outlined';
+        content: "light_mode";
+        font-size: 40px;
+        color: white;
+    }
+    #Light:checked + .Dark::before {
+        content: "dark_mode";
+        font-family: 'Material Symbols Outlined';
+        color: white;
+    }
+    #Light {
+        display: none;
+    }
+    .Dark {
+        cursor: pointer;
+        display: flex;
+        align-self: right;
+    }
+    .celownik {
+        height: fit-content;
+        width: 60px;
+        background-color: rgb(174, 174, 54);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    :root {
+    --menu1: rgb(108, 156, 37);
+    --menu2: rgb(84, 119, 35);
+    --Miron: rgb(128, 128, 128);
+    --stopka:   rgb(96, 93, 93);
+}
+body:has(#Light:checked) {
+    --menu1: rgb(68, 110, 25);
+    --menu2: rgb(48, 80, 22);
+    --Miron: rgb(95, 95, 95);
+    --stopka: rgb(60, 58, 58);
+}
+
+
+
+
+
+
+
+
+.Tlo {
+    height: 84%;
+}
+.BODY {
+    background-image:url(Image/Wodospad2.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 956px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nagłówek2 {
+    color: white;
+    font-family: "Iosevka Charon", monospace;
+    font-size: 3.125em;
+}
+.hr {
+    width:10%;
+    background-color: gold;
+}
+.button {
+    width: 6%;
+    height: 2%;
+    padding: 1.25rem;
+    color: white;
+    background-color: rgb(174, 174, 54);
+    border: 0px;
+    margin-top: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-family: "Iosevka Charon", monospace;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: rgb(230, 157, 32);
+    width: 7%;
+    height: 3%;
+    box-shadow: 5px 5px 5px 5px rgb(42, 40, 40);
+}
+#Miron {
+    width: 100%;
+    height:500%;
+    background-color: var(--Miron);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.zdj {
+    width: 100%;
+    margin-top: 3rem;
+}
+.podpis {
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    font-size: 3.125em;
+    width: fit-content;
+}
+.Lewy {
+    width:fit-content;
+    height:fit-content;
+    margin-top: 10rem;
+    margin-right: 2.5rem;
+}
+.Prawy {
+    width: 40%;
+    margin-top: 10rem;
+    height: fit-content;
+    margin-left: 2.5rem;
+}
+.Calo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+    height: fit-content;
+}
+.Loga {
+    width: 3vw;
+}
+.Loggo {
+    display: flex;
+    flex-direction: row;
+}
+.pdroz {
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    font-size: 1.3em;
+    text-align: justify;
+    width: 450px;
+    margin-top: 8%;
+}
+.Har {
+    height:auto;
+    width: 56.5%;
+    display: flex;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+
+
+.przewodnik {
+    height: 100%;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 3rem;
+    text-align: center;
+}
+.najciek {
+    font-family: "Iosevka Charon", monospace;
+    color:white;
+    font-size: 3.125em;
+    display: inline-block;
+    margin-bottom: 2%;
+    text-align: left;
+}
+.F1 {
+    width: 24.11vw;
+    display: block;
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(47, 46, 46);
+}
+.Madera {
+    width: 85%;
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(47, 46, 46);
+    margin-top: 15%;
+}
+.Galeria {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5%;
+    width:100%;
+    height: fit-content;
+}
+.Galerion {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width:100%;
+    height: fit-content;
+}
+
+
+.Baton {
+    width: 6%;
+    height: 2%;
+    padding: 1.25rem;
+    color: white;
+    background-color: rgb(174, 174, 54);
+    border: 0px;
+    margin-top: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    transition: 0.5s;
+    font-family: "Iosevka Charon", monospace;
+    text-decoration: none;
+    margin-right: 6%;
+    margin-bottom: 2%;
+}
+.Baton:hover {
+    background-color: rgb(230, 157, 32);
+    width: 7%;
+    height: 3%;
+    box-shadow: 5px 5px 5px 5px rgb(42, 40, 40);
+}
+.Baton:focus {
+    background-color: rgb(107, 64, 37);
+}
+.button:focus {
+    background-color: rgb(107, 64, 37);
+}
+
+
+
+
+.stopka {
+    width: 100%;
+    height: 11vh;
+    background-color: var(--stopka);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+}
+.gramofon {
+    font-size: 1.5em;
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+}
+.Mial {
+    font-size: 1.5em;
+    font-family: "Iosevka Charon", monospace;
+    color: white;
+    display: inline-block;
+}
+.Iconic {
+    height: 6vh;
+}
+.Sajmon {
+    display: flex;
+    align-items: center;
+}
+.Gap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Gqp {
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 1509px) {
+    .F1 {
+        height: 20vh;
+    }
+}
+@media (max-width: 1571px) {
+    .Mial {
+        font-size: 1.4em;
+    }
+    .gramofon {
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 1439px) {
+    .Mial {
+        font-size: 1em;
+    }
+    .gramofon {
+        font-size: 1em;
+    }
+}
+@media (max-width: 1217px) {
+    .F1 {
+        height: 19vh;
+    }
+}
+@media (max-width: 1075px) {
+    .F1 {
+        height: 16vh;
+    }
+    .Mial {
+        font-size: 0.7em;
+    }
+    .gramofon {
+        font-size: 0.7em;
+    }
+    .pdroz {
+        margin-top: 2%;
+    }
+    .Prawy {
+        margin-left: 3%;
+    }
+    .Lewy {
+        margin-right: 4%;
+    }
+    .podpis {
+        font-size: 2em;
+    }
+}
+@media (max-width: 804px) {
+    .F1 {
+        height: 14vh;
+    }
+    .Prawy {
+        display: none;
+    }
+    .Lewy {
+        margin-right: 0;
+    }
+    .pdroz {
+        text-align: justify;
+    }
+    .Loga {
+        width: 35px;
+    }
+}
+@media (max-width: 951px) {
+    .najciek {
+        font-size: 2em;
+    }
+}
+@media (max-width: 855px) {
+    .Prawy {
+        width: 190px;
+    }
+}
+@media (max-width: 679px) {
+    .Prawy {
+        width: 190px;
+    }
+}
+@media (max-width: 607px) {
+    .F1 {
+        height: 10vh;
+    }
+    .najciek {
+        font-size: 1.5em;
+    }
+    .nagłówek2 {
+        font-size: 2em;
+    }
+    .Lewy {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .podpis {
+        font-size: 1.5em;
+    }
+    .pdroz {
+        width:95%;
+        margin-left: 5%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 1070px) {
+    .Voldemort {
+        display: flex;
+    }
+    .Dumble {
+        display: none;
+    }
+    .Meni > li {
+    height: 2em;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    }
+    .Meni > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: "Iosevka Charon", monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Meni > li:hover {
+        background-color: rgb(230, 157, 32);
+        border-radius: 5px;
+    }
+    /*Ukrycie Checkboxa*/
+    #hamburger {
+        display: none;
+    }
+    /*Ikony Hamburgera*/
+    .burger {
+        width: 30px;
+        cursor: pointer;
+        display: flex;
+        gap: 2px;
+    }
+    /*Ukrywanie na początku*/
+    .Meni {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background: rgb(59, 82, 27);
+        width: fit-content;
+        height: fit-content;
+        transform: translateX(-100%); /*ukrycie poza ekranem*/
+        transition: 0.3s ease; /*powrót na ekran w dół płynnym ruchem*/
+        list-style-type: none;
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+        gap: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .Podmenu {
+        overflow: hidden;
+        position:absolute;
+        background: rgb(183, 126, 27);
+        text-align:  center;
+        top: 100%;
+        left: auto;
+        border-radius: 5px;
+        transition: 1s;
+        height: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    .Podmenu > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: white;
+        font-family: "Iosevka Charon", monospace;
+        transition: 1s;
+        padding: 5px;
+        height: 30px;
+        width: 6rem;
+    }
+    .Podmenu > li:hover {
+        background-color: rgb(119, 81, 16);
+    }
+    .Blink {
+        font-size: 1.2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Meni li:hover #o1{
+        height: 120px;
+        transition: 0.5s;
+    }
+    .Meni li:hover #o2{
+        height: 240px;
+        transition: 0.5s;
+    }
+    .Meni li:hover #o3{
+        height: 40px;
+        transition: 0.5s;
+    }
+    #hamburger:checked ~ .Meni {
+        transform: translateX(0);
+    }
+    
+    
+    /*animacja hamburgera*/
+    .burger::before {
+        font-family: 'Material Symbols Outlined';
+        content: "menu";
+        font-size: 40px;
+        color: white;
+    }
+    /* Zmiana na close */
+    #hamburger:checked + .burger::before {
+        content: "close";
+        font-family: 'Material Symbols Outlined';
+        color: white;
+    }
+}
+@media (max-width: 450px) {
+    .nagłówek {
+        font-size: 1.9em;
+    }
+    .nagłówek2 {
+        font-size: 1.5em;
+    }
+}
