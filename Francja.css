@@ -217,7 +217,7 @@ body:has(#Light:checked) {
     height: 84%;
 }
 .BODY {
-    background-image:url(Image/Anyz.png);
+    background-image:url(Anyz.png);
     width: 100%;
     height: 956px;
     display: flex;
