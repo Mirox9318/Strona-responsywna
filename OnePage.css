@@ -192,7 +192,7 @@ body:has(#Light:checked) {
     height: 84%;
 }
 .BODY {
-    background-image:url(Image/Wodospad2.png);
+    background-image:url(Wodospad2.png);
     background-attachment: fixed;
     width: 100%;
     height: 956px;
@@ -413,7 +413,7 @@ body:has(#Light:checked) {
     align-items: center;
 }
 #Gqp {
-    font-size: 20px;
+    font-size: 50px;
     color: white;
 }
 
